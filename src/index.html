@@ -1,0 +1,24 @@
+<html class="theme-dark">
+
+<head>
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+
+<body>
+    <h1>Welcome to My Web Page H1</h1>
+    <p class="bg-deepblue">This is a p, hohoho!</p>
+
+    <select id="theme-selector">
+        <option value="light">Light</option>
+        <option value="dark" selected>Dark</option>
+        <option value="red">Red</option>
+    </select>
+
+    <script>
+        document.getElementById('theme-selector').addEventListener('change', (e) => {
+            document.documentElement.className = `theme-${e.target.value}`;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@import './themes/theme-light.css';
+@import './themes/theme-dark.css';
+@import './themes/theme-red.css';
+
+@custom-variant dark (&:where(.theme-dark, .theme-dark *));
+@custom-variant red (&:where(.theme-red, .theme-red *));
+
+@theme inline {
+	--color-background: var(--background);
+	--color-text: var(--text);
+}
+
+@layer base {
+	body {
+		@apply bg-background;
+	}
+
+	h1 {
+		@apply text-xl font-bold text-text;
+	}
+
+	p {
+		@apply text-text;
+	}
+}
