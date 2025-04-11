@@ -1,0 +1,7 @@
+.card {
+	@apply max-w-sm bg-cardBg p-8 rounded-lg shadow-md border-2 border-cardBorder flex flex-col gap-6;
+}
+
+.card-button {
+	@apply bg-purple-500 hover:bg-purple-700 text-buttonText rounded py-2 font-bold cursor-pointer;
+}
