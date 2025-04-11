@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@tailwind base;
+
 @import './themes/theme-light.css';
 @import './themes/theme-dark.css';
 @import './themes/theme-purple.css';
@@ -16,14 +18,14 @@
 	/* Theme-overriden */
 	--color-background: var(--background);
 
-    --color-titleText: var(--titleText);
-    --color-pText: var(--pText);
-    
+	--color-titleText: var(--titleText);
+	--color-pText: var(--pText);
+
 	--color-cardBg: var(--cardBg);
 	--color-cardBorder: var(--cardBorder);
-    --color-cardText: var(--cardText);
+	--color-cardText: var(--cardText);
 
-    --color-buttonText: var(--buttonText);
+	--color-buttonText: var(--buttonText);
 }
 
 @layer base {
@@ -50,5 +52,15 @@
 
 	p {
 		@apply text-pText;
+	}
+
+	select {
+		background-image: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'%3e %3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4'/%3e %3c/svg%3e");
+		background-position: right 15px center;
+		background-repeat: no-repeat;
+		background-size: 0.75em 0.75em;
+
+		@apply text-cardText bg-cardBg px-4 pr-4 py-2 rounded appearance-none;
+		padding-right: 41px;
 	}
 }
