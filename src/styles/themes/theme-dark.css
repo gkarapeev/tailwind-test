@@ -1,4 +1,15 @@
 .theme-dark {
-	--background: rgb(29, 29, 51);
-    --textColor: rgb(204, 202, 223);
+	--background: #080808;
+
+    --textLight: hsl(0, 0%, 83%);
+    --textDark: hsl(240, 0%, 24%);
+
+	--titleText: var(--textLight);
+    --pText: var(--textLight);
+
+	--cardBg: #242424;
+	--cardBorder: #494949;
+	--cardText: var(--textLight);
+
+    --buttonText: var(--textLight);
 }

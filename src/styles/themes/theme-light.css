@@ -1,4 +1,15 @@
 :root {
 	--background: rgb(196, 196, 240);
-    --textColor: rgb(19, 17, 32);
+
+	--textLight: #f3e4ff;
+	--textDark: #535353;
+
+	--titleText: var(--textDark);
+    --pText: var(--textDark);
+
+	--cardBg: #f4f4f4;
+	--cardBorder: #8d8dc5;
+	--cardText: var(--textDark);
+
+    --buttonText: var(--textLight);
 }

@@ -2,26 +2,55 @@
 
 @import './themes/theme-light.css';
 @import './themes/theme-dark.css';
-@import './themes/theme-red.css';
+@import './themes/theme-purple.css';
 
 @custom-variant dark (&:where(.theme-dark, .theme-dark *));
-@custom-variant red (&:where(.theme-red, .theme-red *));
+@custom-variant purple (&:where(.theme-purple, .theme-purple *));
 
 @theme inline {
+	/* Theme-independent */
+	--something: none;
+
+	/* Theme-overriden */
 	--color-background: var(--background);
-	--color-textColor: var(--textColor);
+
+    --color-titleText: var(--titleText);
+    --color-pText: var(--pText);
+    
+	--color-cardBg: var(--cardBg);
+	--color-cardBorder: var(--cardBorder);
+    --color-cardText: var(--cardText);
+
+    --color-buttonText: var(--buttonText);
 }
 
 @layer base {
 	body {
-		@apply bg-background;
+		@apply bg-background flex flex-col;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-bold text-titleText;
 	}
 
 	h1 {
-		@apply text-xl font-bold text-textColor;
+		@apply text-3xl text-center;
+	}
+
+	h4 {
+		@apply text-3xl;
 	}
 
 	p {
-		@apply text-textColor;
+		@apply text-pText;
+	}
+
+	.card {
+		@apply max-w-sm bg-cardBg p-8 rounded-lg shadow-md border-2 border-cardBorder flex flex-col gap-6;
 	}
 }

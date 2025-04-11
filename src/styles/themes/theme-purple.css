@@ -1,0 +1,15 @@
+.theme-purple {
+	--background: rgb(29 15 31);
+
+	--textLight: hsl(24 70% 92% / 1);
+	--textDark: rgb(82, 13, 13);
+
+	--titleText: var(--textLight);
+	--pText: var(--textLight);
+
+	--cardBg: #3f2d41;
+	--cardBorder: rgb(113 85 117);
+	--cardText: var(--textLight);
+
+    --buttonText: var(--textLight);
+}
