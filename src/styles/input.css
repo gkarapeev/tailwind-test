@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-@tailwind base;
-
 @import './themes/theme-light.css';
 @import './themes/theme-dark.css';
 @import './themes/theme-purple.css';
@@ -60,7 +58,7 @@
 		background-repeat: no-repeat;
 		background-size: 0.75em 0.75em;
 
-		@apply text-cardText bg-cardBg px-4 pr-4 py-2 rounded appearance-none;
+		@apply text-cardText bg-cardBg px-4 pr-4 py-1 rounded appearance-none border-2 border-cardBorder;
 		padding-right: 41px;
 	}
 }

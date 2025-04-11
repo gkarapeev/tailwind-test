@@ -1,13 +1,13 @@
 :root {
-	--background: rgb(196, 196, 240);
+	--background: #e3deeb;
 
 	--textLight: #f3e4ff;
-	--textDark: #535353;
+	--textDark: #5b5b95;
 
 	--titleText: var(--textDark);
     --pText: var(--textDark);
 
-	--cardBg: #f4f4f4;
+	--cardBg: #ececff;
 	--cardBorder: #8d8dc5;
 	--cardText: var(--textDark);
 
